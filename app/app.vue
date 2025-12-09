@@ -230,19 +230,20 @@ const handleSubmit = async () => {
 
     </main>
 
-    <footer class="bg-white border-t border-gray-200 mt-auto relative">
+    <footer class="bg-white border-t border-gray-200 mt-auto">
       <div
-        class="max-w-6xl mx-auto py-6 px-4 sm:px-6 lg:px-8 relative flex flex-col-reverse items-center md:block text-sm text-gray-500">
+        class="max-w-6xl mx-auto py-6 px-4 sm:px-6 lg:px-8 relative flex flex-col md:flex-row items-center md:justify-center text-sm text-gray-500">
 
-        <p class="text-center md:w-full">&copy; 2025 Nuxt Blog. All rights reserved.</p>
-
-        <div class="flex space-x-6 mb-4 md:mb-0 md:absolute md:top-1/2 md:left-8 md:-translate-y-1/2 md:mt-0">
-          <a href="#" class="hover:text-blue-600 transition-colors font-medium">關於我們</a>
-          <span class="text-gray-300">|</span> <a href="#"
-            class="hover:text-blue-600 transition-colors font-medium">隱私權政策</a>
+        <div class="flex items-center space-x-4 mb-4 md:mb-0 md:absolute md:left-8">
+          <a href="#" class="hover:text-blue-600 transition-colors">關於我們</a>
           <span class="text-gray-300">|</span>
-          <a href="#" class="hover:text-blue-600 transition-colors font-medium">聯絡方式</a>
+          <a href="#" class="hover:text-blue-600 transition-colors">隱私權政策</a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="hover:text-blue-600 transition-colors">聯絡方式</a>
         </div>
+
+        <p>&copy; 2025 Nuxt Blog. All rights reserved.</p>
+
       </div>
     </footer>
     <div v-if="isEditModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
