@@ -125,7 +125,7 @@ const handleSubmit = async () => {
         </h1>
       </div>
     </header>
-
+    -
     <main class="max-w-4xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
 
       <section class="bg-white shadow-md rounded-lg p-6 mb-10">
@@ -229,6 +229,18 @@ const handleSubmit = async () => {
       </section>
 
     </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-auto">
+      <div
+        class="max-w-4xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between item-center text-sm text-gray-500">
+        <p>&copy; 2025 Nuxt Blog. All rights reserved.</p>
+        <div>
+          <a href="#" class="hover:text-blue-600 transition-colors">關於我們</a>
+          <a href="#" class="hover:text-blue-600 transition-colors">隱私權政策</a>
+          <a href="#" class="hover:text-blue-600 transition-colors">聯絡方式</a>
+        </div>
+      </div>
+    </footer>
     <div v-if="isEditModalOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
 
       <div @click="closeEditModal"
